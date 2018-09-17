@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Balance Diet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--item title for activity_main_drawer-->
+    <string name="my_diet_picker">My Diet Picker</string>
+    <string name="my_wheel">My Wheel</string>
+    <string name="my_report">My Weekly Report</string>
+    <string name="my_bmr">My BMR</string>
+    <string name="my_share">Share</string>
+    <string name="my_send">Send</string>
+
+    <!--view names for activity_sign_in and sign_up-->
+    <string name="signin_page_title">Sign In</string>
+    <string name="input_name">Username</string>
+    <string name="input_pw">Password</string>
+    <string name="btn_signin">SIGN IN</string>
+    <string name="btn_signup">SIGN UP</string>
+
+    <string name="signup_page_title">Sign Up</string>
+    <string name="input_email">Email</string>
+    <string name="input_phone">Phone Number</string>
+
+    <!--spinner item in bmr calculator-->
+    <string-array name="activity_level">
+        <item>Sedentary </item>
+        <item>Lightly active</item>
+        <item>Moderately active</item>
+        <item>Very active</item>
+        <item>Extra active</item>
+
+    </string-array>
+
+
+</resources>
