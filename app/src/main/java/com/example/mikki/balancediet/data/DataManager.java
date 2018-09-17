@@ -2,11 +2,11 @@ package com.example.mikki.balancediet.data;
 
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
 
 import com.example.mikki.balancediet.data.database.DBHelper;
 import com.example.mikki.balancediet.data.database.IDBHelper;
-import com.example.mikki.balancediet.signin.LogInClass;
+import com.example.mikki.balancediet.objectclass.Customer;
+import com.example.mikki.balancediet.objectclass.LogInClass;
 
 public class DataManager implements IDataManager{
 
@@ -16,9 +16,10 @@ public class DataManager implements IDataManager{
         dbHelper = new DBHelper(context);
     }
 
-    @Override
-    public void createRow() {
 
+    @Override
+    public void createRow(OnResponseListener listener, Customer customer) {
+        dbHelper.createRow(listener, customer);
     }
 
     @Override

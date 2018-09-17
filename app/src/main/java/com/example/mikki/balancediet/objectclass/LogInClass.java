@@ -1,4 +1,4 @@
-package com.example.mikki.balancediet.signin;
+package com.example.mikki.balancediet.objectclass;
 
 public class LogInClass {
     String className;

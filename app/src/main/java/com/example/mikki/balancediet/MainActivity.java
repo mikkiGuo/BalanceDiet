@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import com.example.mikki.balancediet.bmr.BMRCalculator;
 import com.example.mikki.balancediet.dietpicker.DietPicker;
+import com.example.mikki.balancediet.mywheel.MyWheelFragment;
 import com.example.mikki.balancediet.signin.SignIn;
 
 public class MainActivity extends AppCompatActivity
@@ -96,11 +97,12 @@ public class MainActivity extends AppCompatActivity
             getFragmentManager().beginTransaction().replace(R.id.contentMain, new DietPicker()).commit();
 
         } else if (id == R.id.nav_dietwheel) {
-            getFragmentManager().beginTransaction().replace(R.id.contentMain, new PlayMusic()).commit();
+            getFragmentManager().beginTransaction().replace(R.id.contentMain, new MyWheelFragment()).commit();
             /*Intent intent = new Intent(MainActivity.this, MyIntentService.class);
             startService(intent);*/
 
         } else if (id == R.id.nav_report) {
+            getFragmentManager().beginTransaction().replace(R.id.contentMain, new PlayMusic()).commit();
 
         } else if (id == R.id.nav_bmr) {
             //replace contentMain by bmrcalculator

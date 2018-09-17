@@ -37,9 +37,9 @@ public class MyDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        //String queries = sql.createTable(CUSTOMER,USERID, NAME, PHONE, EMAIL);
+        String queries = sql.createTable(CUSTOMER,KEY_ID, USERID, NAME, EMAIL, PHONE);
         //create Customer Table
-        //db.execSQL(queries);
+        db.execSQL(queries);
         //create Login Table
         String queries2 = sql.createTable(LOGIN, KEY_ID, USERID, PASSWORD);
         Log.d("table", "onCreate: " + queries2);

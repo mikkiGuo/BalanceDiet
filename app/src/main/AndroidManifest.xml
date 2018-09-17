@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mikki.balancediet">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,13 +17,15 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".signup.SignUp"></activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".signup.SignUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
 
             </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity">
+
         </activity>
         <service android:name=".MyIntentService"
             android:enabled="true"

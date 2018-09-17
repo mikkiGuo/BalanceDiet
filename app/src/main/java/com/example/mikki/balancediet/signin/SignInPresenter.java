@@ -6,6 +6,7 @@ import android.view.View;
 import com.example.mikki.balancediet.R;
 import com.example.mikki.balancediet.data.DataManager;
 import com.example.mikki.balancediet.data.IDataManager;
+import com.example.mikki.balancediet.objectclass.LogInClass;
 
 
 import java.util.ArrayList;

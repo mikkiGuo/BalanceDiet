@@ -50,7 +50,7 @@
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/tv_email"
+            android:id="@+id/txt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -59,7 +59,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/tv_phone"
+            android:id="@+id/txt_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
