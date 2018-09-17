@@ -12,7 +12,6 @@ import com.example.mikki.balancediet.objectclass.LogInClass;
 
 public class DBHelper implements IDBHelper {
 
-    //MyDatabase myDatabase;
     AppDatabase myDatabase;
     static SQLiteDatabase db;
 
@@ -28,13 +27,14 @@ public class DBHelper implements IDBHelper {
     public void createRow(IDataManager.OnResponseListener listener, Customer customer) {
         listener.getResult("Sucessful");
 
-        /*String queries = sql.insertRow("Customer",
+        String queries = sql.insertRow("Customer",
                 customer.getUserID(), customer.getEmail(), customer.getPhone());
         Log.d("cus", "createRow: " + queries);
         String queries2 = sql.insertRow("Login", customer.getUserID(), customer.getPassword());
         Log.d("login", "createRow: " + queries2);
         //db.execSQL(queries);
-        db.execSQL(queries2);*/
+
+        //db.execSQL(queries2);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class DBHelper implements IDBHelper {
         Log.d("readRow", "readRow: ......");
         //db = getWritableDatabase();
         //listener.getResult("Test");
-        String queries = sql.readRows(myDatabase.LOGIN, myDatabase.USERID, login.getUserID());
+        /*String queries = sql.readRows(myDatabase.LOGIN, myDatabase.USERID, login.getUserID());
         String pw = myDatabase.PASSWORD;
         Log.d("show", "readRow: " + queries);
 
@@ -61,7 +61,7 @@ public class DBHelper implements IDBHelper {
         else{
             Log.d("test3", "readRow: nononono");
             listener.getResult("Failure");
-        }
+        }*/
 
 
     }

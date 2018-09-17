@@ -22,7 +22,7 @@ public class MyWheelFragment extends Fragment {
         webView = (WebView) view.findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("file:///android_asset/myHTML.html");
-        
+
         webView.setWebChromeClient(new WebChromeClient());
         return view;
     }

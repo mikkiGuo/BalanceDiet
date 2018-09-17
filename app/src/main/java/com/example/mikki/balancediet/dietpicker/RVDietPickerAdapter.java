@@ -49,6 +49,7 @@ public class RVDietPickerAdapter extends RecyclerView.Adapter<RVDietPickerAdapte
         Food food = foodList.get(position);
         holder.name.setText(food.name);
 
+
         
     }
 

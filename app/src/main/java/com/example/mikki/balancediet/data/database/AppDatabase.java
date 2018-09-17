@@ -3,11 +3,14 @@ package com.example.mikki.balancediet.data.database;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+import com.example.mikki.balancediet.data.database.model.SQLqueries;
 
 public class AppDatabase extends SQLiteOpenHelper {
 
     //customer table's attribute
-    public static final String MYDATABASE = "myDataBase";
+    public static final String MYDATABASE = "appDataBase";
     public static final String CUSTOMER = "Customer";
     public static final String USERID = "UserID";
     public static final String NAME = "Name";
@@ -26,19 +29,29 @@ public class AppDatabase extends SQLiteOpenHelper {
         super(context, MYDATABASE, null, VERSION);
     }
 
+
+    SQLqueries sql = SQLqueries.getSqLqueries();
+
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_TABLE = "CREATE TABLE " + LOGIN + "("
+        Log.d("constructor", "myDatabase constructor called: hahhah");
+        String queries = sql.createTable(CUSTOMER,KEY_ID, USERID, NAME, EMAIL, PHONE);
+        db.execSQL(queries);
+        String queries2 = sql.createTable(LOGIN, KEY_ID, USERID, PASSWORD);
+        /*String CREATE_TABLE = "CREATE TABLE " + LOGIN + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + USERID + " TEXT,"
-                + PASSWORD + " TEXT" + ")";
+                + PASSWORD + " TEXT" + ")";*/
 
-        db.execSQL(CREATE_TABLE);
+        db.execSQL(queries2);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + LOGIN);
         //if drop table how about data? then we need backup.
+        db.execSQL("DROP TABLE IF EXISTS " + CUSTOMER);
         onCreate(db);
+
+
     }
 }

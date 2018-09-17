@@ -3,6 +3,8 @@
     package="com.example.mikki.balancediet">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,21 +20,24 @@
 
         </activity>
         <activity android:name=".signup.SignUp">
+
+        </activity>
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
 
             </intent-filter>
         </activity>
-        <activity android:name=".SplashActivity">
-
-        </activity>
         <service android:name=".MyIntentService"
             android:enabled="true"
             android:exported="true">
 
         </service>
-
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
 
     </application>
 
