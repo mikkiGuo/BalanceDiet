@@ -22,20 +22,20 @@
         <activity android:name=".signup.SignUp">
 
         </activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".demopurpose.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
 
             </intent-filter>
         </activity>
-        <service android:name=".MyIntentService"
+        <service android:name=".demopurpose.MyIntentService"
             android:enabled="true"
             android:exported="true">
 
         </service>
         <receiver
-            android:name=".MyReceiver"
+            android:name=".demopurpose.MyReceiver"
             android:enabled="true"
             android:exported="true"></receiver>
 

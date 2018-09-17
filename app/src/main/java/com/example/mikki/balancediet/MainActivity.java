@@ -1,6 +1,5 @@
 package com.example.mikki.balancediet;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,9 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.mikki.balancediet.bmr.BMRCalculator;
+import com.example.mikki.balancediet.demopurpose.PlayMusic;
 import com.example.mikki.balancediet.dietpicker.DietPicker;
+import com.example.mikki.balancediet.dietpicker.LoadingFragment;
 import com.example.mikki.balancediet.mywheel.MyWheelFragment;
-import com.example.mikki.balancediet.signin.SignIn;
 
 public class MainActivity extends AppCompatActivity
 
@@ -93,7 +93,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_dietpicker) {
+
+            //getFragmentManager().beginTransaction().replace(R.id.contentMain, new LoadingFragment()).commit();
             //replace contentMain by diet picker
+
             getFragmentManager().beginTransaction().replace(R.id.contentMain, new DietPicker()).commit();
 
         } else if (id == R.id.nav_dietwheel) {

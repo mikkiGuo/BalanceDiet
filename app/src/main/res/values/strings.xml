@@ -16,6 +16,20 @@
     <string name="my_share">Share</string>
     <string name="my_send">Send</string>
 
+    <!--view names for content_main-->
+    <string name="greeting_msg">Welcome To My Balance Diet App</string>
+    <string name="description">This app help you maintain a healthy diet everyday by
+        \n1. providing you a diet picker which is use for you to pick your daily consumption.
+        \n2. A nutrition wheel, an editable wheel which can help you to understand
+        the proportion of food category you eat daily
+        \n3. this app then help you to analyze your eating behavior based on your wheel.
+        \n4. then this app will help you to eat healthier by
+        letting you know the category of food you need to consume more or less
+        \n5. report stores you daily eating status and can
+        display your wheel result for up to one week
+        \n6. you can send and share your report with others.
+    </string>
+
     <!--view names for activity_sign_in and sign_up-->
     <string name="signin_page_title">Sign In</string>
     <string name="input_name">Username</string>
@@ -34,8 +48,11 @@
         <item>Moderately active</item>
         <item>Very active</item>
         <item>Extra active</item>
-
     </string-array>
+
+    <!--view names for play music -->
+    <string name="startPlay">Play Music</string>
+    <string name="stopPlay">Stop Music</string>
 
 
 </resources>

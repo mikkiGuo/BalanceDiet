@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/fragmentBackGround"
     android:layout_height="match_parent">
 
     <Button
@@ -10,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
-        android:text="Music"
+        android:text="@string/startPlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,7 +20,9 @@
         android:id="@+id/btn_stopMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/stopPlay"
+        app:layout_constraintEnd_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
 </android.support.constraint.ConstraintLayout>

@@ -1,10 +1,12 @@
-package com.example.mikki.balancediet;
+package com.example.mikki.balancediet.demopurpose;
 
 import android.app.IntentService;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.annotation.Nullable;
 import android.widget.Toast;
+
+import com.example.mikki.balancediet.R;
 
 //import org.greenrobot.eventbus.EventBus;
 //import org.greenrobot.eventbus.Subscribe;

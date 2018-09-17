@@ -1,7 +1,5 @@
-package com.example.mikki.balancediet;
+package com.example.mikki.balancediet.demopurpose;
 
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +7,7 @@ import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.mikki.balancediet.R;
 import com.example.mikki.balancediet.signin.SignIn;
 
 public class SplashActivity extends AppCompatActivity {
@@ -37,21 +36,6 @@ public class SplashActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-
-            /*pd = new ProgressDialog(SplashActivity.this);
-            pd.setTitle("Progress Dialog");
-            pd.setMessage("Please wait...");
-            pd.setCancelable(false);
-            pd.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-                    cancel(true);
-                }
-            });
-
-            pd.show();*/
-
 
         }
 

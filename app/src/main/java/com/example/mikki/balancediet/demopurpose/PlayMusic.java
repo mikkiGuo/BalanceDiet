@@ -1,4 +1,4 @@
-package com.example.mikki.balancediet;
+package com.example.mikki.balancediet.demopurpose;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.example.mikki.balancediet.R;
+import com.example.mikki.balancediet.demopurpose.MyIntentService;
 
 public class PlayMusic extends Fragment {
     Button playMusic_btn, stopMusic_btn;

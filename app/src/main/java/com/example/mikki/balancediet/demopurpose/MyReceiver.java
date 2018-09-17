@@ -1,4 +1,4 @@
-package com.example.mikki.balancediet;
+package com.example.mikki.balancediet.demopurpose;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
